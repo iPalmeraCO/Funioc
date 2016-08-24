@@ -492,8 +492,9 @@ body {
 }
 body.custom-font-enabled {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	background-image: url("img/fondo.jpg");
-    background-size: 100%;
+	background: url("img/fondo.jpg") no-repeat;
+    background-size: cover;
+    
 
 }
 a {
@@ -677,8 +678,8 @@ footer[role="contentinfo"] {
 	line-height: 2;
 	/*max-width: 960px;
 	max-width: 68.571428571rem;*/
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
+	/*margin-top: 24px;
+	margin-top: 1.714285714rem;*/
 	/*margin-left: auto;
 	margin-right: auto;*/
 	background-color: #072748;
@@ -1785,12 +1786,39 @@ img#wpstats {
 	background-image: url('img/fondo1.png');
 	background-size: 100%, auto;
 	min-height: 454px;
+	background-repeat: no-repeat;
 }
 .fondo2{
 	background-image: url('img/fondo2.png');
 	background-size: 100%, auto;
 	min-height: 507px;
+	background-repeat: no-repeat;
 }
+.fondo3{
+	background-image: url('img/fondo3.png');
+	background-size: 100%, auto;
+	min-height: 507px;
+	background-repeat: no-repeat;
+}
+.fondo4{
+	background-image: url('img/fondo4.png');
+	background-size: 100% 100%;
+	min-height: 507px;
+	background-repeat: no-repeat;
+}
+.fondo5{
+	background-image: url('img/fondo5.png');
+	background-size: 100% 100%;
+	min-height: 507px;
+	background-repeat: no-repeat;
+}
+.fondo6{
+	background-image: url('img/fondo6.png');
+	background-size: 100% 100%;
+	min-height: 507px;
+	background-repeat: no-repeat;
+}
+
 
 .alturaletras p{
 	line-height: 25px;
@@ -1836,4 +1864,48 @@ img#wpstats {
 	color:#FFF;
 	margin-top: 70px;
 	margin-left: 20px;
+}
+#breadcrumbs{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.banner img{
+	width: 100%;
+}
+.containerpage2{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.historia img {
+	max-height: 100px !important;
+}
+.historia h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.historia p {
+	text-align: justify;
+	line-height: 25px;
+}
+
+.historia {
+	margin-bottom: 20px;
+}
+.historia .motopress-service-box-icon-holder {
+	height: 150px !important;
+}
+
+.separador {
+	background-image: url('img/separador.png');
+	background-size: 100%, auto;	
+	background-repeat: no-repeat;
+}
+
+#page{
+	background: #FFF;
 }

@@ -15,16 +15,29 @@
  */
 
 get_header(); ?>
-	<div class="col-md-12">
-	<?php     $img   = get_field('banner',get_the_ID());
+
+	<div class="col-md-12 banner">
+
+		<?php
+
+		
+		?>
+		<?php   
+		 $img   = get_field('banner',get_the_ID());
         	  $rutimg = $img["url"];     
         ?>
-	
+		<img src="<?php echo $rutimg; ?>">
+		
+	</div>
+	<div class="col-md-12">
+		<?php
+		if ( function_exists('yoast_breadcrumb') ) {
+   			  yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+		}	?>
+
 		<?php  while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
-	</div>
-	<div class="col-md-12">
 	</div>
 	<div class="col-md-12 fhome">
 		<?php
