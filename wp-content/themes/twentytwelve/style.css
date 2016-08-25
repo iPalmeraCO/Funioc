@@ -1477,6 +1477,7 @@ img#wpstats {
 
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {
+
 	.author-avatar {
 		float: left;
 		margin-top: 8px;
@@ -1782,43 +1783,20 @@ img#wpstats {
 		margin-left: 3.57142857rem;
 	}
 }
-.fondo1{
-	background-image: url('img/fondo1.png');
-	background-size: 100%, auto;
-	min-height: 454px;
+.fondotextura{	
+	background: url('img/textura.png');
+    background-size: cover;	
 	background-repeat: no-repeat;
-}
-.fondo2{
-	background-image: url('img/fondo2.png');
-	background-size: 100%, auto;
-	min-height: 507px;
-	background-repeat: no-repeat;
-}
-.fondo3{
-	background-image: url('img/fondo3.png');
-	background-size: 100%, auto;
-	min-height: 507px;
-	background-repeat: no-repeat;
-}
-.fondo4{
-	background-image: url('img/fondo4.png');
-	background-size: 100% 100%;
-	min-height: 507px;
-	background-repeat: no-repeat;
-}
-.fondo5{
-	background-image: url('img/fondo5.png');
-	background-size: 100% 100%;
-	min-height: 507px;
-	background-repeat: no-repeat;
-}
-.fondo6{
-	background-image: url('img/fondo6.png');
-	background-size: 100% 100%;
-	min-height: 507px;
-	background-repeat: no-repeat;
+	margin-bottom: 50px;
 }
 
+.separador{
+	position: absolute;
+	/*bottom: -46px;*/
+}
+.separador2{
+	position: absolute;
+}
 
 .alturaletras p{
 	line-height: 25px;
@@ -1832,6 +1810,7 @@ img#wpstats {
 
 .fhome{
 	    position: relative;
+	        margin-top: -70px;
     height: 183px;
 
 }
@@ -1842,7 +1821,7 @@ img#wpstats {
     left: -5px;
 }
 .frase {
-	margin-top: 20px;
+	margin-top: 70px;
 }
 .frase .f{
 	font-size: 24px;
@@ -1908,4 +1887,56 @@ img#wpstats {
 
 #page{
 	background: #FFF;
+}
+
+.nopad{
+	padding: 0px;
+}
+
+.planta{
+	position: absolute;
+	right: 0px;
+}
+
+.flexslider .slides li{
+	/*margin-right: 0px !important;*/
+
+}
+.miembroequipo img{
+	width: 100%;
+}
+.miembroequipo .motopress-service-box-heading-section{
+background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    opacity: 0.7;
+    color:#FFF;
+}
+.integrantes {
+	margin-bottom: 50px;
+}
+
+
+.integrantes .motopress-clmn{
+    margin-left: 2px !important;
+    margin-top: 2px !important;
+}
+@media (max-width: 700px) {
+
+	.frase{
+		margin-top: 0px;
+	}
+
+	.birdhome{
+		top:70px;
+		width: 100%;
+	}
+
+	.fhome{
+		height: 225px;
+	}
+
 }

@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-	<div class="col-md-12 banner">
+	<div class="col-md-12 banner nopad">
 
 		<?php
 
@@ -29,7 +29,7 @@ get_header(); ?>
 		<img src="<?php echo $rutimg; ?>">
 		
 	</div>
-	<div class="col-md-12">
+	<div class="col-md-12  nopad">
 		<?php
 		if ( function_exists('yoast_breadcrumb') ) {
    			  yoast_breadcrumb('<p id="breadcrumbs">','</p>');
@@ -39,7 +39,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
 	</div>
-	<div class="col-md-12 fhome">
+	<div class="col-md-12 fhome nopad">
 		<?php
 
 		$frase =  get_post_field('frase',get_the_ID());
@@ -57,13 +57,6 @@ get_header(); ?>
         </div>
 		
 	</div>
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-
-
-			
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
+	
 
 <?php get_footer(); ?>

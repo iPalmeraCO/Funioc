@@ -15,16 +15,14 @@
  */
 
 get_header(); ?>
-	<div class="col-md-12">
+	<div class="col-md-12 nopad">
 	<?php     echo do_shortcode("[metaslider id=7]"); ?>
 	
 		<?php  while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
-	</div>
-	<div class="col-md-12">
-	</div>
-	<div class="col-md-12 fhome">
+	</div>	
+	<div class="col-md-12 fhome nopad">
 		<?php
 
 		$frase =  get_post_field('frase',get_the_ID());
