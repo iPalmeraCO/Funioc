@@ -551,8 +551,8 @@ a:hover {
 
 /* Header */
 .site-header {
-	padding: 24px 0;
-	padding: 1.714285714rem 0;
+	/*padding: 24px 0;
+	padding: 1.714285714rem 0;*/
     margin-left: 15px;
 	margin-right: 15px;
 }
@@ -585,8 +585,8 @@ a:hover {
 	color: #757575;
 }
 .header-image {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
+	margin-top: 20px;	
+	margin-bottom: 20px;	
 }
 
 /* Navigation Menu */
