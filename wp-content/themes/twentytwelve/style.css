@@ -1517,9 +1517,7 @@ img#wpstats {
 		margin-bottom: 0;
 	}
 	.main-navigation ul.nav-menu,
-	.main-navigation div.nav-menu > ul {
-		border-bottom: 1px solid #ededed;
-		border-top: 1px solid #ededed;
+	.main-navigation div.nav-menu > ul {	
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
@@ -1537,7 +1535,7 @@ img#wpstats {
 		border-bottom: 0;
 		color: #6a6a6a;
 		line-height: 3.692307692;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		white-space: nowrap;
 	}
 	.main-navigation li a:hover,
@@ -1545,8 +1543,8 @@ img#wpstats {
 		color: #000;
 	}
 	.main-navigation li {
-		margin: 0 40px 0 0;
-		margin: 0 2.857142857rem 0 0;
+		margin: 0 15px 0 0;
+		/*margin: 0 2.857142857rem 0 0;*/
 		position: relative;
 	}
 	.main-navigation li ul {
@@ -1574,7 +1572,7 @@ img#wpstats {
 		width: inherit;
 	}
 	.main-navigation li ul li a {
-		background: #efefef;
+		background: #fff;
 		border-bottom: 1px solid #ededed;
 		display: block;
 		font-size: 11px;
@@ -1939,4 +1937,38 @@ background-color: #000;
 		height: 225px;
 	}
 
+}
+.contenidoconvocatoria{	
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.campoform {
+	margin-top: 15px;	
+}
+.campoform input, .campoform textarea{
+	   border: 2px solid #e0620b;
+}
+.enviar {
+	text-align: right;
+}
+.enviar input{
+	background: #e0620b;
+	color: #FFF;
+	
+}
+::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: #000;  
 }

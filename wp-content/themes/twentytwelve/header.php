@@ -34,11 +34,40 @@
 <script type="text/javascript">
 
 $( document ).ready(function() {
+	
+
     var altura=$(".separador2").innerHeight();
     var mitad = (altura/2)-3;
     $(".separador2").css("bottom",-mitad+"px");    
+
+    var cont=0;
+    $(".convocatoria").each(function(key, element) {
+
+    	$(element).attr('id', cont);
+    	cont = cont + 1;
+			    
+	});
+
+    $( ".convocatoria" ).click(function(e) {
+  		e.preventDefault();  		
+  		var seleccion = $(this).attr('id');  		
+  		var contenido = $('.contenidoconvocatoria').get(seleccion);
+  		$(contenido).toggle();
+
+	});
+
 });
 </script>
+
+<?php if ( ! current_user_can( 'manage_options' ) ) { ?>
+<style>
+.contenidoconvocatoria{
+	display: none;
+}
+</style>
+
+<?php } 
+?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -47,12 +76,12 @@ $( document ).ready(function() {
 
 		 <div class="containerpage">
 		 <div class="col-md-12">
-            	<div class="col-md-6 col-sm-4 col-xs-12 slogan">
+            	<div class="col-md-4 col-sm-4 col-xs-12 slogan">
             		<?php if ( get_header_image() ) : ?>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" /></a>
 					<?php endif; ?>
             	</div>
-            	<div class="col-md-6  col-sm-8 col-xs-12 socialnetworks">
+            	<div class="col-md-8  col-sm-8 col-xs-12 socialnetworks">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></button>
 						<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
