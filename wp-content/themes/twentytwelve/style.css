@@ -110,11 +110,13 @@ details,
 figcaption,
 figure,
 footer,
-header,
 hgroup,
 nav,
 section {
 	display: block;
+}
+header{
+	display: inline-block;
 }
 audio,
 canvas,
@@ -555,6 +557,7 @@ a:hover {
 	padding: 1.714285714rem 0;*/
     margin-left: 15px;
 	margin-right: 15px;
+	    width: 97%;
 }
 .site-header h1,
 .site-header h2 {
@@ -1922,40 +1925,39 @@ background-color: #000;
     margin-left: 2px !important;
     margin-top: 2px !important;
 }
-@media (max-width: 700px) {
 
-	.frase{
-		margin-top: 0px;
-	}
-
-	.birdhome{
-		top:70px;
-		width: 100%;
-	}
-
-	.fhome{
-		height: 225px;
-	}
-
-}
 .contenidoconvocatoria{	
 	padding-left: 5%;
 	padding-right: 5%;
 }
 
-.campoform {
+.campoform, .campoform2, .enviar {
 	margin-top: 15px;	
 }
 .campoform input, .campoform textarea{
 	   border: 2px solid #e0620b;
+	   width: 100%;
 }
 .enviar {
 	text-align: right;
+	margin-bottom: 15px;
 }
 .enviar input{
 	background: #e0620b;
 	color: #FFF;
+	padding: 5px 26px;
+    color: #FFF;
+    text-align: center;    
+    margin: 0 auto;
+    /* margin-top: 41px; */
+    font-size: 15px;
 	
+}
+.enviar  .ajax-loader{
+	margin-left: -16px !important;
+}
+.enviar input:hover{
+	background: #e0620b;
 }
 ::-webkit-input-placeholder {
    color: #000;
@@ -1971,4 +1973,70 @@ background-color: #000;
 
 :-ms-input-placeholder {  
    color: #000;  
+}
+
+#comp {
+    background-color: #F47B2A;
+    padding: 5px 26px;
+    color: #FFF;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    /* margin-top: 41px; */
+    font-size: 15px;
+}
+
+#hojadevida {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+div.wpcf7-validation-errors{
+	border: none !important;
+	    text-align: right;
+}
+.titconta{
+	    margin-left: 25px;
+}
+
+.socialnetworks {
+	text-align: right;
+	margin-top: 6%;
+}
+.socialnetworks img:hover{
+	background: #e0620b;
+}
+.socialnetworks .widget.widget_sp_image {
+    display: inline-block;    
+    padding: 2px;
+}
+
+
+@media (max-width: 700px) {
+
+	.frase{
+		margin-top: 0px;
+	}
+
+	.birdhome{
+		top:70px;
+		width: 100%;
+	}
+
+	.fhome{
+		height: 225px;
+	}
+
+	.socialnetworks {
+	text-align: center;
+	}
+
+}
+.menu-toggle, .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active{
+	background: none;
+	border: none;
 }

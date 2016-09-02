@@ -15,12 +15,15 @@
 
 <footer id="colophon" role="contentinfo">
 		<div class="container">
-			<div class="col-md-8 containersite">
+			<div class="col-md-8 col-sm-8 col-xs-12 containersite">
 					<div class="site-info">
 						<?php dynamic_sidebar("sidebar-4");?>
 						
 
 					</div><!-- .site-info -->
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12 socialnetworks">
+				<?php dynamic_sidebar("sidebar-5");?>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
