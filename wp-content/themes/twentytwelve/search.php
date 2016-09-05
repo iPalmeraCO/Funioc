@@ -9,13 +9,13 @@
 
 get_header(); ?>
 
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
+	
+		<div class="containerpage2 resultadosbusqueda">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentytwelve' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title"><?php printf( __( 'Resultados para: %s', 'twentytwelve' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header>
 
 			<?php twentytwelve_content_nav( 'nav-above' ); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<article id="post-0" class="post no-results not-found">
 				<header class="entry-header">
-					<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentytwelve' ); ?></h1>
+					<h1 class="entry-title"><?php _e( 'No se encontraron resultados', 'twentytwelve' ); ?></h1>
 				</header>
 
 				<div class="entry-content">
@@ -43,7 +43,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</div><!-- #content -->
-	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+
 <?php get_footer(); ?>

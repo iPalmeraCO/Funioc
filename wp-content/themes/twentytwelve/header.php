@@ -36,9 +36,8 @@
 $( document ).ready(function() {
 	
 
-    var altura=$(".separador2").innerHeight();
-    var mitad = (altura/2)-3;
-    $(".separador2").css("bottom",-mitad+"px");    
+    ajustarseparador() ;
+    maxalturaservicios();
 
     var cont=0;
     $(".convocatoria").each(function(key, element) {
@@ -57,6 +56,28 @@ $( document ).ready(function() {
 	});
 
 });
+
+$( window ).resize(function() {
+  ajustarseparador();
+  maxalturaservicios();
+});
+
+function ajustarseparador(){
+	  var altura=$(".separador2").innerHeight();
+    var mitad = (altura/2)-3;
+    $(".separador2").css("bottom",-mitad+"px"); 
+}
+
+function maxalturaservicios(){
+	var heights = $(".historia p").map(function ()
+    {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".historia p").css("min-height",maxHeight+"px");
+}
 </script>
 
 <?php if ( ! current_user_can( 'manage_options' ) ) { ?>
@@ -88,6 +109,9 @@ $( document ).ready(function() {
 						<?php //_e( 'Menu', 'twentythirteen' ); ?></button>						
 						<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+						<div id="formbuscar">
+						<?php get_search_form(); ?>
+						</div>
 					</nav><!-- #site-navigation -->			        
 			     </div>
               

@@ -46,12 +46,13 @@ get_header(); ?>
 		$autor =  get_post_field('autor',get_the_ID());
         $img   = get_field('imagen',get_the_ID());
         $rutimg = $img["url"];       
-
+        $slug = get_post_field( 'post_name', get_post() );
+        $class = "animal_".$slug;
         ?>
-        <div class="col-md-4 fbird">
+        <div class="col-md-4 fbird col-xs-12 <?php echo $class; ?>">
         	<img src="<?php echo $rutimg; ?>" class="birdhome">
         </div>
-        <div class="col-md-8 frase">
+        <div class="col-md-8 frase col-xs-12">
         	<p class="f"><?php echo $frase; ?></p>
         	<p class="a"><?php echo $autor; ?></p>
         </div>

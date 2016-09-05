@@ -705,6 +705,8 @@ footer[role="contentinfo"] a:hover {
 }
 .entry-header {
 	margin-bottom: 24px;
+	text-align: center;
+	width: 100%;
 	margin-bottom: 1.714285714rem;
 }
 .entry-header img.wp-post-image {
@@ -716,6 +718,7 @@ footer[role="contentinfo"] a:hover {
 	font-size: 1.428571429rem;
 	line-height: 1.2;
 	font-weight: normal;
+	text-align: left;
 }
 .entry-header .entry-title a {
 	text-decoration: none;
@@ -1522,7 +1525,7 @@ img#wpstats {
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {	
 		display: inline-block !important;
-		text-align: left;
+		text-align: right;
 		width: 100%;
 	}
 	.main-navigation ul {
@@ -1871,6 +1874,7 @@ img#wpstats {
 .historia p {
 	text-align: justify;
 	line-height: 25px;
+	min-height: 140px;
 }
 
 .historia {
@@ -2016,16 +2020,48 @@ div.wpcf7-validation-errors{
 }
 
 
-@media (max-width: 700px) {
+
+@media  (max-width: 768px) {
+.colservicios{
+	 
+    border-right:none !important;
+          
+    
+}
+.historia p{
+	min-height: auto !important;
+}
+
 
 	.frase{
-		margin-top: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.frase .a {  
+    margin-top: 20px;
+	}
+
+	.fbird{
+		margin-top: 20px;
+		text-align: center;
 	}
 
 	.birdhome{
-		top:70px;
-		width: 100%;
+		position: initial;
+		width: 100% !important;
 	}
+
+	.site-info .textwidget{
+		margin-top: 0px;
+		text-align: center;
+		font-size: 15px;
+	}
+
+}
+
+@media (max-width: 700px) {
+
 
 	.fhome{
 		height: 225px;
@@ -2035,8 +2071,98 @@ div.wpcf7-validation-errors{
 	text-align: center;
 	}
 
+	.blogs {
+    margin-bottom: 75px;
+}	
+	.rowmeta{
+		    padding: 0px
+	}
+
+	.birdhome{
+		
+		width: auto;
+	}
+
+	
+
 }
+
+
 .menu-toggle, .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active{
 	background: none;
 	border: none;
+}
+
+#text3, .titbloghome{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.titbloghome{
+	color:#000;
+    margin-bottom: 15px;
+
+}
+.blogshome{
+	margin-top: 20px;
+}
+.blogs{
+	margin-bottom: 20px;
+}
+
+.separa, .separa2 {
+    border: 0;
+    height: 1px;
+    background: #a0a0a0;    
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.separa2:last-child{
+	background: #FFF;    	
+}
+
+.metadatos{	
+	margin-top: 20px;
+}
+
+.image img{
+	min-height: 175px;
+}
+
+#menu-menu-1{
+	text-align: right;
+}
+
+.menu-menu-1-container, #formbuscar {
+    display: inline-block;	
+}
+#formbuscar > form > div >  input{
+	width: 80px;
+}
+#searchsubmit{
+	display: none;
+}
+
+.resultadosbusqueda{
+	margin-bottom: 20px;
+	min-height: 290px;
+}
+
+.historia .motopress-service-box-button-section{
+	margin-top: 10px;
+}
+
+.colservicios{
+	 
+    border-right: 1px solid #a0a0a0;
+          padding-right: 15px;
+    
+}
+
+.colservicios:last-child{
+	 
+    border-right: 1px solid #fff;
+          
+    
 }
