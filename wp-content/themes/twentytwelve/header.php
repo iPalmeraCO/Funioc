@@ -76,7 +76,18 @@ function maxalturaservicios(){
 
     maxHeight = Math.max.apply(null, heights);
 
+    var heights2 = $(".historia h2").map(function ()
+    {
+        return $(this).height();
+    }).get(),
+
+    maxHeight2 = Math.max.apply(null, heights2);
+    $(".historia h2").css("min-height",maxHeight2+"px");
     $(".historia p").css("min-height",maxHeight+"px");
+}
+
+function activarmenu(){
+	$(".menumobile").toggle();
 }
 </script>
 
@@ -104,7 +115,7 @@ function maxalturaservicios(){
             	</div>
             	<div class="col-md-8  col-sm-8 col-xs-4 ">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle">
+						<button class="menu-togglecustom" onclick="activarmenu()">
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/2016/09/menumobile.png" border="0" />
 						<?php //_e( 'Menu', 'twentythirteen' ); ?></button>						
 						<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
@@ -114,8 +125,18 @@ function maxalturaservicios(){
 						</div>
 					</nav><!-- #site-navigation -->			        
 			     </div>
+			   	
               
             </div>
+              <div class="col-md-12 col-sm-12 col-xs-12 menumobile">
+			     	
+											
+						
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu2' ) ); ?>
+						
+					
+
+			     </div>
            </div>
 
 		

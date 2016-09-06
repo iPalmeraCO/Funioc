@@ -104,10 +104,10 @@ wp_reset_query();
         $rutimg = $img["url"];       
 
         ?>
-        <div class="col-md-4 fbird col-xs-12">
+        <div class="col-md-4 fbird  col-sm-6 col-xs-12">
         	<img src="<?php echo $rutimg; ?>" class="birdhome">
         </div>
-        <div class="col-md-8 frase col-xs-12">
+        <div class="col-md-8 frase col-sm-6 col-xs-12">
         	<p class="f"><?php echo $frase; ?></p>
         	<p class="a"><?php echo $autor; ?></p>
         </div>

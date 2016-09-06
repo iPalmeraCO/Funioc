@@ -20,7 +20,7 @@
 		return;
 	}
 
-	button.onclick = function() {
+	/*button.onclick = function() {
 		if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
 			menu.className = 'nav-menu';
 		}
@@ -32,7 +32,7 @@
 			button.className += ' toggled-on';
 			menu.className += ' toggled-on';
 		}
-	};
+	};*/
 } )();
 
 // Better focus for hidden submenu items for accessibility.

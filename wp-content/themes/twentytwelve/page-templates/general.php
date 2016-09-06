@@ -29,7 +29,7 @@ get_header(); ?>
 		<img src="<?php echo $rutimg; ?>">
 		
 	</div>
-	<div class="col-md-12  nopad">
+	<div class="col-md-12  nopad opages">
 		<?php
 		if ( function_exists('yoast_breadcrumb') ) {
    			  yoast_breadcrumb('<p id="breadcrumbs">','</p>');
@@ -39,7 +39,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
 	</div>
-	<div class="col-md-12 fhome nopad">
+	<div class="col-md-12 fhome fothers nopad">
 		<?php
 
 		$frase =  get_post_field('frase',get_the_ID());
@@ -49,10 +49,10 @@ get_header(); ?>
         $slug = get_post_field( 'post_name', get_post() );
         $class = "animal_".$slug;
         ?>
-        <div class="col-md-4 fbird col-xs-12 <?php echo $class; ?>">
-        	<img src="<?php echo $rutimg; ?>" class="birdhome">
+        <div class="col-md-4 fbird col-sm-6 col-xs-12 <?php echo $class; ?>">
+        	<img src="<?php echo $rutimg; ?>" class="footeranimal">
         </div>
-        <div class="col-md-8 frase col-xs-12">
+        <div class="col-md-8 frase col-sm-6 col-xs-12">
         	<p class="f"><?php echo $frase; ?></p>
         	<p class="a"><?php echo $autor; ?></p>
         </div>
