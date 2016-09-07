@@ -1573,7 +1573,8 @@ img#wpstats {
 
 .menu-menu-1-container {
     
-    text-align: center;
+    /*text-align: center;*/
+    width: 100%;
 
 }
 
@@ -2273,10 +2274,26 @@ width: 95%;
 		    padding: 12px;
 	}
 
-	.nav-menu2 .sub-menu li{
+	.nav-menu2 > li, .sub-menu li{
 		border-bottom: 1px solid #fff;
+
+	}
+	.sub-menu li:last-child{
+		border-bottom: none;
+		padding-bottom: 0px;
+	}
+	.sub-menu {
+		border-top:  1px solid #fff;
+		margin-top: 15px;
+	}
+	.sub-menu li a{
+		margin-left: 10px;
+	}
+	.menu-item-has-children a{
+		
 	}
 
-	.menu-item-has-children{
-		/*background: yellow;*/
+	#videos{
+		
+
 	}
